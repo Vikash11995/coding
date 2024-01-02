@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .me{
+            background-color:aquamarine;
+        }
+        .navi {
+            background-color: aquamarine;
+            border-radius: 20px;
+        }
+
+        .navi li {
+            list-style-type: none;
+            float: left;
+            padding: 7px 5px;
+            margin: 6px 20px;
+        }
+
+        .navi ul {
+            overflow: auto;
+        }
+
+        .navi div {
+            float: right;
+            margin: 9px 20px;
+            padding-right: 30px;
+        }
+
+        .navi input {
+            border-radius: 14px;
+            width: 240px;
+            height: 20px;
+        }
+
+        .navi li:hover {
+            color:darkgray;
+        }
+        .form{background-color:beige;
+        }
+    .shiva input:hover{
+        background-color: darkgray;
+    }
+    .frm{
+        background-color: aquamarine;
+    }
+        #om{border-style: ridge;border-top-right-radius:60px;border-bottom-left-radius: 60px;border-width: 4px;text-align: center;border-spacing: 5px;}
+        .me{border-style: ridge;border-width: 3px;margin-bottom: 200px;margin-right: 0%;margin-top: 120px;text-align: left;border-color: red; animation-fill-mode: forwards;}
+    </style>
+    <script lang="javascript">
+        function me() {
+            alert(hello)
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navi">
+            <ul>
+                <li onClick="me()">Home</li>
+                <li>Product</li>
+                <li>About</li>
+                <li>Contact us</li>
+                <div>
+                    <input type="text" id="search" placeholder="search here">
+                </div>
+            </ul>
+        </nav>
+        <img src="/.vscode/images/biryani/egg-biryani.jpeg" alt="">
+    </header>
+    <div class="frm"
+    ><form class="shiva" action="backend.php">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Name"><br>
+       <label for="DOB">D.O.B:</label>
+        <input type="date" name="date" ><br>
+       Gender: <input type="radio" id="male" name="gender">Male
+       <input type="radio" id="female" name="gender">Female
+       <input type="radio" id="trans" name="gender">Trans <br>
+        Aadhar no.<input type="number" required="on" id="adhar" maxlength="12" minlength="12" placeholder="12-digit aadhar"><br>
+    No.of Pass<input type="number" max="3"  min="0"><br>
+        <label for="Society">Society:
+            <select name="Society" id="Society">
+                <option value="GDS">Gokuldham Society</option>
+<option value="RVS">Ramvilas Society</option>
+<option value="MAS">Maa Ambe Society</option>
+<option value="SS">Shivaye Society</option>
+            </select><br>
+            <input type="reset"><input type="submit" value="submit" onclick="om()"><br>
+        </form>
+    </div>
+    <div class="me" >
+       <p><marquee><b>Disclaimer:</b>misbehave with others are strictly prohibited</marquee></p>
+    </div>
+</body>
+
+</html>
